@@ -1,0 +1,17 @@
+<!-- 打开截图 开始 -->
+<view class="imageContainer">
+  <view class="imageFrame">
+    <view class="imageSingle" wx:for="{{imgs}}" wx:for-item="item" wx:key="*this">
+      <image class="imagePic"
+      src="{{item}}"
+      data-index="{{index}}" mode="aspectFill" bindtap="previewImg">
+        <icon type="cancel" class="imageRemove" data-index="{{index}}" catchtap="deleteImg"></icon>
+      </image>
+    </view>
+    <!-- 用来提示用户上传图片 -->
+    <view class="imageSingle" bindtap="chooseImg">
+      <image class="imagePic" src="/images/imageAdd.png"></image>
+    </view>
+  </view>
+</view>
+<!-- 打开截图 结束 -->

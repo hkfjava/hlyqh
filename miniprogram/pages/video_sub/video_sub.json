@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "提交视频信息",
+  "usingComponents": {
+    "txv-video": "plugin://tencentvideo/video"
+  }
+}

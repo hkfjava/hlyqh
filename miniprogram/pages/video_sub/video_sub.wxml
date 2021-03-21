@@ -1,0 +1,25 @@
+<image class="bg" src="/images/bj_2.png">
+</image>
+
+<form bindsubmit="formSubmit" >
+  
+  <view class="content">
+    
+    <video  class="vide" src="{{videourl}}" objectFit="fill"></video>
+ 
+    <view>
+      <input hidden="hidden" name="vide" value="{{videourl}}" />
+      <input name="name" bindblur="nameChange" placeholder-class="phcolor" placeholder="输入视频标题" />
+    </view>
+    <view>
+      <view class="uploader-text" bindtap="chooseVideo">
+    <text>上传婚礼视频</text>
+  </view>
+    </view>
+    
+     
+    
+    
+    <button form-type="submit">提交</button>
+  </view>
+</form>

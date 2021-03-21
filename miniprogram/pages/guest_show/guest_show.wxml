@@ -1,0 +1,25 @@
+<!-- <image class="bg" src="/images/bj_2.png">
+</image> -->
+
+
+<!-- <form bindsubmit="formSubmit" report-submit> -->
+  <scroll-view class="content " scroll-y="true" style="height: 1200rpx;">
+
+    <view wx:for="{{guest_show}}">
+    <view class="viewitem" >
+      <text>{{item.g_name}}</text>    <text  decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;{{item.g_phone}}</text><text style="float:right">{{item.g_count}}人</text>  
+      <text>\n</text>
+      <text>\n</text>
+      <text>{{item.p_word}}</text>
+      
+    </view>
+  </view>
+    
+  <view >
+  <navigator  url="../guest/guest" open-type="navigate" class="uploader-text sub">
+    <text>添加宾客</text>
+  </navigator>
+</view>
+  
+</scroll-view>
+<!-- </form> -->

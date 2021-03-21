@@ -1,0 +1,46 @@
+/* pages/upphoto/upphoto.wxss */
+/* 图片容器 */
+.imageContainer {
+  width: 100%;
+  background-color: white;
+
+  /* 子容器水平居中 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  
+  /* border: 1rpx solid black; */
+}
+
+/* 图片框架 */
+.imageFrame {
+  margin: 30rpx 0;
+  width: 93%;
+  
+  /* border: 1rpx solid red; */
+}
+
+/* 单张图片 */
+.imageSingle {
+  width: 32%;
+  float: left;
+  position: relative;
+
+  margin-right: 7rpx;
+
+  /* border: 1rpx solid blue; */
+}
+
+/* 添加图片+预览照片 */
+.imagePic {
+  width: 100%;
+  height: 222rpx;
+}
+
+/* 删除图片 */
+.imageRemove {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+

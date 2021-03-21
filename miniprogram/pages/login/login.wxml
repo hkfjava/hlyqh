@@ -1,0 +1,98 @@
+<!--miniprogram/pages/login/login.wxml-->
+
+<view class="container">
+
+<!-- 用户 openid -->
+<view class="userinfo">
+
+  <block>
+    <image bindtap="bindViewTap" class="userinfo-block-avatar" src="{{avatarUrl}}" mode="cover"></image>
+  </block>
+
+  <view class="userinfo-nickname-wrapper">
+    <button class="userinfo-nickname"  open-type="getUserInfo" bindgetuserinfo="getUserInfomation">获取信息</button>
+    <view>{{nickName}}</view>
+  </view>
+
+</view>
+
+<!-- 上传图片 -->
+<view class="uploader">
+  <view class="uploader-text" bindtap="chooseImg">
+    <text>上传婚礼图片</text>
+  </view>
+  <!-- <block>
+    <image bindtap="bindViewTap" class="userinfo-block-avatar" src="{{imgurl}}" mode="cover"></image>
+    
+  </block> -->
+</view>
+
+<!-- 上传视频 -->
+<!-- <view class="uploader">
+  <view class="uploader-text" bindtap="chooseVideo">
+    <text>上传婚礼视频</text>
+  </view>
+</view> -->
+
+<!-- 宾客信息提交 -->
+<view class="uploader">
+  <navigator url="../video_sub/video_sub" open-type="navigate" class="uploader-text">
+    <text>婚礼视频提交</text>
+  </navigator>
+</view>
+
+
+
+<!-- 宾客信息提交 -->
+<view class="uploader">
+  <navigator url="../guest/guest" open-type="navigate" class="uploader-text">
+    <text>宾客信息提交</text>
+  </navigator>
+</view>
+
+<!-- 宾客信息展示 -->
+<view class="uploader">
+  <navigator url="../guest_show/guest_show" open-type="navigate" class="uploader-text">
+    <text>宾客信息展示</text>
+  </navigator>
+</view>
+
+<!-- 宾客信息展示 -->
+<view class="uploader">
+  <navigator url="../marry_info_sub/marry_info" open-type="navigate" class="uploader-text">
+    <text>设置婚礼信息</text>
+  </navigator>
+</view>
+
+
+
+<!-- 操作数据库 -->
+<view class="uploader">
+  <navigator url="../databaseGuide/databaseGuide" open-type="navigate" class="uploader-text">
+    <text>前端操作数据库</text>
+  </navigator>
+</view>
+
+<!-- 即时通信 -->
+<view class="uploader">
+  <navigator url="../im/im" open-type="navigate" class="uploader-text">
+    <text>即时通信 Demo</text>
+  </navigator>
+</view>
+
+<!-- 新建云函数 -->
+<view class="uploader">
+  <navigator url="../addFunction/addFunction" open-type="navigate" class="uploader-text">
+    <text>快速新建云函数</text>
+  </navigator>
+</view>
+
+<!-- 云调用 -->
+<view class="uploader">
+  <navigator url="../openapi/openapi" open-type="navigate" class="uploader-text">
+    <text>云调用</text>
+  </navigator>
+</view>
+
+
+</view>

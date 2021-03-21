@@ -1,0 +1,62 @@
+
+.userinfo, .uploader, .tunnel {
+  margin-top: 40rpx;
+  height: 140rpx;
+  width: 100%;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-left: none;
+  border-right: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transition: all 300ms ease;
+}
+
+
+.bg {
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.5;
+}
+
+
+.content {
+  width: 90%;
+  position: fixed;
+  /* left: 2vw; */
+  right: 5vw;
+  /* bottom: 6vh; */
+  padding-top: 2vh;
+  
+
+
+}
+
+.viewitem {
+  height: 10vh;
+  font-size: 2.8vh;
+  border: 1rpx solid #ff4c91;
+  border-radius: 10rpx;
+  padding: 1.5vh 40rpx;
+  margin-bottom: 1.5vh;
+  color: #ff4c91;
+  
+}
+
+.sub {
+  font-size: 3vh;
+  height: 7.5vh;
+  line-height: 7.5vh;
+  background: #ff4c91;
+  color: #fff;
+  padding-left: 30vw;
+}
+
+.content picker {
+  padding: 0.7vh 0;
+}
+
+.content .phcolor {
+  color: #ff4c91;
+}
